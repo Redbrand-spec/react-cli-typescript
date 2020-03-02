@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap')
+
+*
+  margin: 0
+  padding: 0
+body
+  width: 100%
+  background: #fafafa
+  color: #595959
+.center
+  text-align: center
+.flex
+  display: flex
+.flex_center
+  display: flex
+  justify-content: center
+.flex_space
+  display: flex
+  justify-content: space-between
+.wrap
+  flex-wrap: wrap
+.colum
+  flex-direction: column 
+.align
+  align-items: center
+.align-end
+  align-items: flex-end
+.align-start
+  align-items: flex-start
+
+@keyframes pace-spinner
+  from 
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+.loader-animator
+  display: block
+  animation: pace-spinner 400ms linear infinite
+  border-color: rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0.4)
+  border-image: none
+  border-radius: 50%
+  border-right: 2px solid rgba(0, 0, 0, 0) !important
+  border-style: solid
+  border-width: 2px
+  height: 16px
+  width: 16px
+  margin: auto
+  z-index: 2000
+
+ul
+  list-style: none
